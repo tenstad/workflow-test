@@ -8,6 +8,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: echo foo
+      - run: echo bar
       - run: cat file
       - run: cat .github/workflows/workflow.yaml
