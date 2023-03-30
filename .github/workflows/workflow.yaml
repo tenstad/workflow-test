@@ -1,0 +1,13 @@
+name: workflow
+
+on:
+  workflow_dispatch:
+
+jobs:
+  job:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: echo foo
+      - run: cat file
+      - run: cat .github/workflows/workflow.yaml
